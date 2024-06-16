@@ -1,0 +1,12 @@
+# this config for extract tile feature and merge those
+model_name: 'efficientnet_v2_s'
+weight_5: '\path\to\simclr.pth'
+weight_20: '\path\to\imageNet.pth'
+savedir_5: '\path\to\result\tile_x5loss'
+savedir_20: '\path\to\result\tile_x20imagenet'
+savedir_com5: '\path\to\result\wsi_x5'
+savedir_com20: '\path\to\result\wsi_x20'
+num_class: 2
+#
+idx2img_5: '\path\to\idx2imgs_5.pkl'
+idx2img_20: '\path\to\idx2imgs_20.pkl'

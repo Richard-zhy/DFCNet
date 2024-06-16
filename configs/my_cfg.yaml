@@ -1,0 +1,32 @@
+5_train_data: '/path/to/wsi_x5loss/tr5.txt'
+5_val_data: '/path/to/wsi_x5loss/val5.txt'
+
+20_train_data: '/path/to/wsi_x20fusion/tr5.txt'
+20_val_data: '/path/to/wsi_x20fusion/val5.txt'
+
+
+# data augmentation
+val_vertical: 'True'
+my_transforms: 'False'
+
+# model
+model_name: 'mymodel'
+
+# optimizer
+lr: 0.00002
+lr_drop: 40
+optim_name: 'AdamW'
+auto_lr: True
+max_patience: 20
+weight_decay: 0.00001
+
+# TRAIN
+#epochs:
+epochs: 200
+batch_size: 1
+num_workers: 4
+num_classes: 2
+loss: 'CE'
+
+# log
+log_cons: True
